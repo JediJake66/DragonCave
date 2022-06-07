@@ -1,7 +1,12 @@
 public class Functions {
-    public int input=0;
 
-    public int takeInput(){
+    private String input="1";
+
+    public Functions(String input){
+        this.input=input;
+    }
+
+    public String getInput(){
         return input;
     }
 }

@@ -5,20 +5,13 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class FunctionsTest {
-    Functions functions;
 
-    @BeforeEach
-    void setUp() {
-        functions = new Functions();
-    }
+       Functions underTest = new Functions("1");
+
     @Test
-    void takeInput() {
-        assertEquals(0,functions.takeInput());
+    void shouldReturnInput() {
+        String x = underTest.getInput();
+        assertEquals("1",x);
     }
 
-
-
-    @AfterEach
-    void tearDown() {
-    }
 }
